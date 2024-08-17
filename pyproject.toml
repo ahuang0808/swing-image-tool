@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "swing-tool"
-version = "0.1.1"
+version = "1.0.0"
 description = "Tools for Swing."
 authors = ["Aiden Huang <ahuang9688@gmail.com>"]
 readme = "README.md"

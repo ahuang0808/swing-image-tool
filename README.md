@@ -30,6 +30,7 @@ See `swing image --help`
 - `poetry install`
 - `poetry shell`
 - `pre-commit install`
+- `pre-commit install --hook-type commit-msg`
 
 ### Release
 
