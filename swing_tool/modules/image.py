@@ -1,3 +1,5 @@
+from importlib import resources
+
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
@@ -9,9 +11,11 @@ class SwingImageBuilderError(Exception):
 
 
 class SwingImageBuilder:
-    HEADER_PATH = "static/header.jpg"
-    FOOTER_PATH = "static/footer.jpg"
-    DESCRIPTION_FONT_PATH = "static/SourceHanSansCN-Regular.otf"
+    HEADER_PATH = resources.files(__package__).joinpath("../../static/header.jpg")
+    FOOTER_PATH = resources.files(__package__).joinpath("../../static/footer.jpg")
+    DESCRIPTION_FONT_PATH = resources.files(__package__).joinpath(
+        "../../static/SourceHanSansCN-Regular.otf",
+    )
     FONT_SIZE = 150
     FONT_COLOR = (0, 0, 0)
 
