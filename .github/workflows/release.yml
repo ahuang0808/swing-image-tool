@@ -36,3 +36,10 @@ jobs:
           dist/swing_cli-*
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Commit CHANGELOG.md
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        branch: main
+        commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
+        file_pattern: CHANGELOG.md
