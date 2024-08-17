@@ -1,4 +1,9 @@
 
+## [v1.0.3] - 2024-08-17
+### :recycle: Refactors
+- [`4c54399`](https://github.com/ahuang0808/swing-tool/commit/4c54399c43433f13026204ef00a6cc388533c418) - move static files to swing_tool folder *(commit by [@ahuang0808](https://github.com/ahuang0808))*
+
+
 ## [v1.0.2] - 2024-08-17
 ### :bug: Bug Fixes
 - [`030dc0f`](https://github.com/ahuang0808/swing-tool/commit/030dc0f1cea68dc7d1b5822158fd24e842d7525c) - build packages including static files *(commit by [@ahuang0808](https://github.com/ahuang0808))*
@@ -25,3 +30,4 @@
 [v1.0.0]: https://github.com/ahuang0808/swing-tool/compare/v0.1.1...v1.0.0
 [v1.0.1]: https://github.com/ahuang0808/swing-tool/compare/v1.0.0...v1.0.1
 [v1.0.2]: https://github.com/ahuang0808/swing-tool/compare/v1.0.1...v1.0.2
+[v1.0.3]: https://github.com/ahuang0808/swing-tool/compare/v1.0.2...v1.0.3
