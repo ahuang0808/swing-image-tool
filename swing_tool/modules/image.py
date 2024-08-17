@@ -11,10 +11,10 @@ class SwingImageBuilderError(Exception):
 
 
 class SwingImageBuilder:
-    HEADER_PATH = resources.files(__package__).joinpath("../../static/header.jpg")
-    FOOTER_PATH = resources.files(__package__).joinpath("../../static/footer.jpg")
+    HEADER_PATH = resources.files(__package__).joinpath("../static/header.jpg")
+    FOOTER_PATH = resources.files(__package__).joinpath("../static/footer.jpg")
     DESCRIPTION_FONT_PATH = resources.files(__package__).joinpath(
-        "../../static/SourceHanSansCN-Regular.otf",
+        "../static/SourceHanSansCN-Regular.otf",
     )
     FONT_SIZE = 150
     FONT_COLOR = (0, 0, 0)
