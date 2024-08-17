@@ -2,7 +2,6 @@ import sys
 from pathlib import Path
 
 import click
-
 from modules.image import SwingImageBuilder
 
 

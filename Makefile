@@ -19,7 +19,7 @@ format:    ## Fix lint
 
 build:    ## Build the packages and binary into dist folder
 	poetry build
-	$(POETRY_RUN) pyinstaller --onefile --name swing_cli-$(VERSION) src/cli.py
+	$(POETRY_RUN) pyinstaller --onefile --name swing_cli-$(VERSION) swing_tool/cli.py
 .PHONY: build
 
 release:    ## Create new tag

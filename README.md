@@ -10,7 +10,7 @@ Find the latest releases [here](https://github.com/ahuang0808/swing-tool/release
 
 ### Modules
 
-Import everything from folder [modules](https://github.com/ahuang0808/swing-tool/tree/master/src/modules).
+Import everything from folder [modules](https://github.com/ahuang0808/swing-tool/tree/master/swing_tool/modules).
 
 ## CLI
 
