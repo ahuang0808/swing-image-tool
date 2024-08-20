@@ -21,7 +21,7 @@ class SwingImageBuilder:
 
     def build(self, image_path: str, description: str):
         """
-        Build a iamge with swing header, footer and desctiption.
+        Build an image with swing header, footer, and description.
 
         Args:
         image_path (str): The image path of the raw image which should be 1:1
@@ -57,8 +57,16 @@ class SwingImageBuilder:
         target_width = header.width
         if target_width != footer.width:
             raise SwingImageBuilderError
-        # Make the width eaqual to the height, then the final image will be 3:4.
-        resized_image = image.resize((target_width, target_width))
+
+        # Crop the image to 1:1 centered
+        width, height = image.size
+        min_side = min(width, height)
+        left = (width - min_side) // 2
+        top = (height - min_side) // 2
+        right = left + min_side
+        bottom = top + min_side
+        cropped_image = image.crop((left, top, right, bottom))
+        resized_image = cropped_image.resize((target_width, target_width))
 
         # Create new image for combination.
         total_height = header.height + resized_image.height + footer.height
