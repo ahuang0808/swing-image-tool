@@ -1,4 +1,9 @@
 
+## [v1.1.0] - 2024-08-20
+### :sparkles: New Features
+- [`4fcd275`](https://github.com/ahuang0808/swing-tool/commit/4fcd27551a1728f3f98bf7e4b4a453a892f1bb06) - Crop the input image to 1:1 if it's not *(commit by [@ahuang0808](https://github.com/ahuang0808))*
+
+
 ## [v1.0.3] - 2024-08-17
 ### :recycle: Refactors
 - [`4c54399`](https://github.com/ahuang0808/swing-tool/commit/4c54399c43433f13026204ef00a6cc388533c418) - move static files to swing_tool folder *(commit by [@ahuang0808](https://github.com/ahuang0808))*
@@ -31,3 +36,4 @@
 [v1.0.1]: https://github.com/ahuang0808/swing-tool/compare/v1.0.0...v1.0.1
 [v1.0.2]: https://github.com/ahuang0808/swing-tool/compare/v1.0.1...v1.0.2
 [v1.0.3]: https://github.com/ahuang0808/swing-tool/compare/v1.0.2...v1.0.3
+[v1.1.0]: https://github.com/ahuang0808/swing-tool/compare/v1.0.3...v1.1.0
