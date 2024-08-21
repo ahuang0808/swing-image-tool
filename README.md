@@ -27,10 +27,7 @@ See `swing image --help`
 
 ### Get Started
 
-- `poetry install`
-- `poetry shell`
-- `pre-commit install`
-- `pre-commit install --hook-type commit-msg`
+- `make init`
 
 ### Release
 

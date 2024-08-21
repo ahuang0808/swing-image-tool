@@ -9,12 +9,23 @@ help:  ## print this help
 	@echo ""
 .PHONY: help
 
+init:    ## Init the dev env
+	poetry install
+	poetry shell
+	pre-commit install
+	pre-commit install --hook-type commit-msg
+.PHONY: init
+
 lint:    ## Check lint
-	$(POETRY_RUN) ruff check
+	$(POETRY_RUN) black . --diff
+	$(POETRY_RUN) isort . --check --diff || true
+	$(POETRY_RUN) flake8
 .PHONY: lint
 
 format:    ## Fix lint
-	$(POETRY_RUN) ruff format
+	$(POETRY_RUN) black .
+	$(POETRY_RUN) isort .
+	$(POETRY_RUN) flake8
 .PHONY: format
 
 build:    ## Build the packages and binary into dist folder

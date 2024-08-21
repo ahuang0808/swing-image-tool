@@ -1,8 +1,6 @@
 from importlib import resources
 
-from PIL import Image
-from PIL import ImageDraw
-from PIL import ImageFont
+from PIL import Image, ImageDraw, ImageFont
 
 
 class SwingImageBuilderError(Exception):
