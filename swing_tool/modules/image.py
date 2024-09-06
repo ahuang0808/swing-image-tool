@@ -11,13 +11,15 @@ class SwingImageBuilderError(Exception):
 class SwingImageBuilder:
     HEADER_PATH = resources.files(__package__).joinpath("../static/header.jpg")
     FOOTER_PATH = resources.files(__package__).joinpath("../static/footer.jpg")
+    HEADER_IG_PATH = resources.files(__package__).joinpath("../static/header_IG.jpg")
+    FOOTER_IG_PATH = resources.files(__package__).joinpath("../static/footer_IG.jpg")
     DESCRIPTION_FONT_PATH = resources.files(__package__).joinpath(
         "../static/SourceHanSansCN-Regular.otf",
     )
     FONT_SIZE = 150
     FONT_COLOR = (0, 0, 0)
 
-    def build(self, image_path: str, description: str):
+    def build(self, image_path: str, description: str, is_ig: bool = False):
         """
         Build an image with swing header, footer, and description.
 
@@ -28,8 +30,13 @@ class SwingImageBuilder:
         Return:
         PIL.Image: Combined image
         """
-        header = Image.open(self.HEADER_PATH)
-        footer = Image.open(self.FOOTER_PATH)
+        if is_ig:
+            header = Image.open(self.HEADER_IG_PATH)
+            footer = Image.open(self.FOOTER_IG_PATH)
+        else:
+            header = Image.open(self.HEADER_PATH)
+            footer = Image.open(self.FOOTER_PATH)
+
         font = ImageFont.truetype(self.DESCRIPTION_FONT_PATH, self.FONT_SIZE)
         image = Image.open(image_path)
         draw = ImageDraw.Draw(footer)

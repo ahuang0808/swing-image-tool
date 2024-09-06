@@ -30,17 +30,19 @@ def image(input_path: str, output_path: str, description: str):
     output_path = Path(output_path) if output_path else output_path
     swing_image_builder = SwingImageBuilder()
     image = swing_image_builder.build(input_path, description)
+    image_ig = swing_image_builder.build(input_path, description, True)
 
     # If output is empty, ouput to the same dir as input,
     # and append "_new" to the filename
     if not output_path:
-        output_path = input_path.parent / f"{input_path.stem}_new{input_path.suffix}"
+        output_path_base = input_path.parent / f"{input_path.stem}"
     # Is dir, output to this folder with same file name as input.
     elif not output_path.suffix:
-        output_path = output_path / input_path.name
+        output_path_base = output_path / input_path.stem
 
     try:
-        image.save(output_path)
+        image.save(f"{output_path_base}_new{input_path.suffix}")
+        image_ig.save(f"{output_path_base}_new_ig{input_path.suffix}")
     except FileNotFoundError:
         sys.exit(f"Please make sure the folder {output_path.parent} exist.")
 
