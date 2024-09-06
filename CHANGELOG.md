@@ -1,4 +1,9 @@
 
+## [v1.1.1] - 2024-09-06
+### :sparkles: New Features
+- [`428e2cc`](https://github.com/ahuang0808/swing-tool/commit/428e2cc27d4dbce45e9724e11ba28a8448e0f94b) - generate 4:3 image for Instagram as well *(commit by [@ahuang0808](https://github.com/ahuang0808))*
+
+
 ## [v1.1.0] - 2024-08-20
 ### :sparkles: New Features
 - [`4fcd275`](https://github.com/ahuang0808/swing-tool/commit/4fcd27551a1728f3f98bf7e4b4a453a892f1bb06) - Crop the input image to 1:1 if it's not *(commit by [@ahuang0808](https://github.com/ahuang0808))*
@@ -37,3 +42,4 @@
 [v1.0.2]: https://github.com/ahuang0808/swing-tool/compare/v1.0.1...v1.0.2
 [v1.0.3]: https://github.com/ahuang0808/swing-tool/compare/v1.0.2...v1.0.3
 [v1.1.0]: https://github.com/ahuang0808/swing-tool/compare/v1.0.3...v1.1.0
+[v1.1.1]: https://github.com/ahuang0808/swing-tool/compare/v1.1.0...v1.1.1
